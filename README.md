@@ -93,13 +93,15 @@ Puedes personalizar el CV editando el archivo `cv_richard.html`:
 
 ## 📞 Información de Contacto
 
-El CV incluye espacios para:
+El CV incluye:
 
-- 📧 Gmail
-- 💼 LinkedIn
-- 🐙 GitHub
+- 📧 **Email:** richard.mateo.obando@gmail.com
+- 📱 **Teléfono:** +34 642 297 705
+- 💼 **LinkedIn:** [Richard Mateo Obando Ladino](https://www.linkedin.com/in/richard-mateo-obando-ladino-5b3214250)
+- 🐙 **GitHub:** [@Elminero26](https://github.com/Elminero26)
+- 🔧 **GitLab:** [@Eltopito](https://gitlab.com/Eltopito)
 
-**Recuerda agregar tus enlaces reales antes de usar el CV.**
+**¡Toda la información de contacto está actualizada y lista para usar!**
 
 ## 🎯 Resultado Final
 
