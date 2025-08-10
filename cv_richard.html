@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard - Desarrollador Full Stack & Fundador de CryptoJazzHolders</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header .title {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .header .tagline {
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9em;
+        }
+
+        .main-content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .about-me {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .about-me p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+
+        .projects {
+            display: grid;
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .project-title {
+            font-size: 1.3em;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .project-status {
+            background: #28a745;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+
+        .project-status.development {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .project-tech {
+            margin: 15px 0;
+        }
+
+        .project-tech strong {
+            color: #667eea;
+        }
+
+        .project-description {
+            line-height: 1.7;
+            color: #666;
+        }
+
+        .objectives {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .objectives h2 {
+            color: white;
+            border-bottom-color: white;
+        }
+
+        .objectives ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .objectives li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .objectives li:before {
+            content: "🚀";
+            position: absolute;
+            left: 0;
+        }
+
+        .quote {
+            text-align: center;
+            font-style: italic;
+            color: #667eea;
+            font-size: 1.1em;
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px dashed #667eea;
+            border-radius: 10px;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Richard</h1>
+            <div class="title">Desarrollador Full Stack & Fundador de CryptoJazzHolders</div>
+            <div class="tagline">"La tecnología es mejor cuando acerca a las personas" - Matt Mullenweg</div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <div class="contact-item">📧 Gmail</div>
+            <div class="contact-item">💼 LinkedIn</div>
+            <div class="contact-item">🐙 GitHub</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- About Me -->
+            <div class="section">
+                <h2>🚀 Sobre Mí</h2>
+                <div class="about-me">
+                    <p>Soy un Desarrollador Full Stack apasionado y Fundador de CryptoJazzHolders, con un enfoque especial en tecnologías modernas y blockchain. Me dedico a crear soluciones innovadoras que combinan funcionalidad y diseño excepcional.</p>
+                </div>
+            </div>
+
+            <!-- Current Work -->
+            <div class="section">
+                <h2>💻 Actualmente Trabajando En</h2>
+                <ul style="padding-left: 20px; line-height: 1.8;">
+                    <li><strong>CryptoJazzHolders</strong> - Servicios tecnológicos y educación en criptomonedas</li>
+                    <li><strong>Tienda Gaming Electronics</strong> - E-commerce especializado en productos gaming</li>
+                    <li><strong>Desarrollo de Cursos</strong> - Formación tecnológica avanzada</li>
+                </ul>
+            </div>
+
+            <!-- Learning -->
+            <div class="section">
+                <h2>🌱 Aprendiendo Constantemente</h2>
+                <ul style="padding-left: 20px; line-height: 1.8;">
+                    <li>React & Next.js para desarrollo frontend avanzado</li>
+                    <li>MongoDB & SQL para gestión de bases de datos</li>
+                    <li>Ciberseguridad y mejores prácticas de seguridad</li>
+                    <li>Arquitecturas de blockchain y smart contracts</li>
+                </ul>
+            </div>
+
+            <!-- Skills -->
+            <div class="section">
+                <h2>🛠️ Stack Tecnológico</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>💻 Lenguajes de Programación</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>🚀 Frameworks y Librerías</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>🗄️ Bases de Datos</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Firebase</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>🛠️ Herramientas y Tecnologías</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Blockchain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="section">
+                <h2>🏆 Proyectos Destacados</h2>
+                <div class="projects">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">🚀 CryptoJazzHolders</div>
+                            <div class="project-status development">En desarrollo activo</div>
+                        </div>
+                        <div class="project-tech">
+                            <strong>Tecnologías:</strong> React, Node.js, Blockchain, Smart Contracts
+                        </div>
+                        <div class="project-description">
+                            Plataforma integral de servicios tecnológicos y educación en criptomonedas. Ofrecemos educación profesional en blockchain, desarrollo web y soluciones tecnológicas personalizadas para empresas.
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">🛒 Tienda Gaming Electronics</div>
+                            <div class="project-status">En producción</div>
+                        </div>
+                        <div class="project-tech">
+                            <strong>Tecnologías:</strong> React, MongoDB, Express, Node.js
+                        </div>
+                        <div class="project-description">
+                            E-commerce especializado en productos gaming con sistema de timbres inteligentes, gestión de inventario y pagos seguros.
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">🔐 Security Tools Collection</div>
+                            <div class="project-status development">En desarrollo</div>
+                        </div>
+                        <div class="project-tech">
+                            <strong>Tecnologías:</strong> Python, Cryptography, Network Security
+                        </div>
+                        <div class="project-description">
+                            Herramientas de ciberseguridad desarrolladas en Python para crear herramientas educativas para aprender ciberseguridad.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objectives -->
+            <div class="objectives">
+                <h2>🎯 Objetivos Actuales</h2>
+                <ul>
+                    <li><strong>Desarrollo Profesional:</strong> Consolidar mi carrera como Full Stack Developer</li>
+                    <li><strong>Colaboración:</strong> Buscar oportunidades de trabajo en equipos innovadores</li>
+                    <li><strong>Crecimiento:</strong> Expandir CryptoJazzHolders como líder en servicios tecnológicos y educación cripto</li>
+                    <li><strong>Contribución:</strong> Participar activamente en proyectos open source</li>
+                    <li><strong>Aprendizaje:</strong> Especializarme en ciberseguridad y blockchain</li>
+                </ul>
+            </div>
+
+            <!-- Collaboration -->
+            <div class="section">
+                <h2>👯 Buscando Colaborar En</h2>
+                <ul style="padding-left: 20px; line-height: 1.8;">
+                    <li>Proyectos de blockchain y criptomonedas</li>
+                    <li>Aplicaciones web innovadoras</li>
+                    <li>Soluciones de ciberseguridad</li>
+                    <li>Proyectos open source</li>
+                </ul>
+            </div>
+
+            <!-- Quote -->
+            <div class="quote">
+                "La tecnología es mejor cuando acerca a las personas" - Matt Mullenweg
+            </div>
+
+            <!-- Footer -->
+            <div style="text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #e9ecef;">
+                <p style="color: #666; font-size: 0.9em;">
+                    ¡Gracias por visitar mi perfil! 🚀<br>
+                    ¿Tienes una idea interesante? ¡Hablemos!
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
