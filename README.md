@@ -1,6 +1,14 @@
-# 📄 CV Richard - Generador de PDF para LinkedIn
+# 📄 CV Richard Mateo Obando Ladino - Generador de PDF para LinkedIn
 
-Este proyecto crea un CV profesional en PDF para LinkedIn basado en la información proporcionada por Richard.
+Este proyecto crea un CV profesional en PDF para LinkedIn basado en la información proporcionada por Richard Mateo Obando Ladino.
+
+## 👤 Información de Contacto
+
+- **📧 Email:** mateooficial1996@gmail.com
+- **📱 Teléfono:** +34 642 297 705
+- **💼 LinkedIn:** [Richard Mateo Obando Ladino](https://www.linkedin.com/in/richard-mateo-obando-ladino-5b3214250)
+- **🐙 GitHub:** [@Elminero26](https://github.com/Elminero26)
+- **🔧 GitLab:** [@Eltopito](https://gitlab.com/Eltopito)
 
 ## 📁 Archivos Incluidos
 
@@ -17,6 +25,7 @@ Este proyecto crea un CV profesional en PDF para LinkedIn basado en la informaci
 ### Opción 1: Usando el Navegador (Más Simple) ⭐
 
 1. **Abrir el archivo HTML:**
+
    - Haz doble clic en `cv_richard.html`
    - Se abrirá en tu navegador predeterminado
 
@@ -28,11 +37,13 @@ Este proyecto crea un CV profesional en PDF para LinkedIn basado en la informaci
 ### Opción 2: Usando pdfkit (Simple con Python)
 
 1. **Instalar dependencias:**
+
    ```bash
    pip install -r requirements_simple.txt
    ```
 
 2. **Instalar wkhtmltopdf:**
+
    - Descarga desde: https://wkhtmltopdf.org/downloads.html
    - Instala el ejecutable
    - Asegúrate de que esté en el PATH del sistema
@@ -45,11 +56,13 @@ Este proyecto crea un CV profesional en PDF para LinkedIn basado en la informaci
 ### Opción 3: Usando WeasyPrint (Avanzado)
 
 1. **Instalar dependencias:**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 2. **En Windows, también necesitarás GTK+:**
+
    - Descarga desde: https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer
    - Instala el ejecutable
 
@@ -93,15 +106,13 @@ Puedes personalizar el CV editando el archivo `cv_richard.html`:
 
 ## 📞 Información de Contacto
 
-El CV incluye:
+El CV incluye espacios para:
 
-- 📧 **Email:** richard.mateo.obando@gmail.com
-- 📱 **Teléfono:** +34 642 297 705
-- 💼 **LinkedIn:** [Richard Mateo Obando Ladino](https://www.linkedin.com/in/richard-mateo-obando-ladino-5b3214250)
-- 🐙 **GitHub:** [@Elminero26](https://github.com/Elminero26)
-- 🔧 **GitLab:** [@Eltopito](https://gitlab.com/Eltopito)
+- 📧 Gmail
+- 💼 LinkedIn
+- 🐙 GitHub
 
-**¡Toda la información de contacto está actualizada y lista para usar!**
+**Recuerda agregar tus enlaces reales antes de usar el CV.**
 
 ## 🎯 Resultado Final
 
